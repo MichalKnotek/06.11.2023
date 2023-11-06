@@ -1,0 +1,17 @@
+﻿  ConsoleApplication1.cpp
+C:\Users\1CT\Documents\Michał K\06.11.2023\06.11.2023\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(7,13): error C2079: "plik" używa niezdefiniowanego class "std::basic_fstream<char,std::char_traits<char>>"
+C:\Users\1CT\Documents\Michał K\06.11.2023\06.11.2023\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(11,31): error C2665: "std::basic_istream<char,std::char_traits<char>>::getline": żadne z przeciążeń 2 nie może konwertować wszystkich typów argumentów
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\istream(445,39): message : może to być „std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::getline(_Elem *,std::streamsize,_Elem)”
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\1CT\Documents\Michał K\06.11.2023\06.11.2023\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(11,8): message : „std::basic_istream<char,std::char_traits<char>> &std::basic_istream<char,std::char_traits<char>>::getline(_Elem *,std::streamsize,_Elem)”: nie można dokonać konwersji argumentu 3 z „const char [2]” do „_Elem”
+          with
+          [
+              _Elem=char
+          ]
+C:\Users\1CT\Documents\Michał K\06.11.2023\06.11.2023\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(11,27): message : Brak kontekstu, w którym ta konwersja jest możliwa
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\istream(445,39): message : zobacz deklarację „std::basic_istream<char,std::char_traits<char>>::getline”
+C:\Users\1CT\Documents\Michał K\06.11.2023\06.11.2023\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(11,31): message : podczas próby dopasowania listy argumentów "(char [100], int, const char [2])"
+C:\Users\1CT\Documents\Michał K\06.11.2023\06.11.2023\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(12,5): error C2146: błąd składniowy: brakuje „;” przed identyfikatorem „plik”

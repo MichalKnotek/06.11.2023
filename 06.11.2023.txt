@@ -1,0 +1,37 @@
+T: Operacje wejścia na plikach txt w c++
+
+ifstream() - in file stream - odczyt danych w pliku np txt
+ofstream() - out file stream - zapis danych do pliku np txt
+fsream() - in && out stram - odczyt i zapis pliku np txt
+
+Tryb pracy z plikiem:
+
+	IOS::IN - odczyt
+	IOS::OUT - zapis
+	IOS::ATE - ustawienie się na końcu pliku
+	IOS::APP - dopisywanie do pliku, bez usuwania zawartości
+	IOS:TRUNC - jeśli plik istnieje to zawartość usuwamy
+	IOS::NOCREATE - otworzy plik jeśli on istnieje, nie tworzy nowego pliku
+	IOS::NOREPLACE - otworzy plik tylko, jeśli on nie istnieje
+	IOS::BINARY - Tryb binarny ( domyślnie pracujemy w trybie tekstowym )
+___________________________________________________________________________________________________________
+
+good() czy mamy dostęp do pliku
+is_open() sprawdza czy plik został otwarty
+close() zamyka połączenie
+eof() czy dotarłeś do końca pliku
+
+poruszanie się po pliku
+	tellg() pobiera daną pozycję w której jesteśmy
+	tellp() zapisuje do danej pozycji
+	seekg(), seekP() ustawienie pozycji w pliku
+g - dla odczytu, p - dla zapisu
+___________________________________________________________________________________________________________
+
+zadanie nr 2 bazując na poznanych treściach na zdjęciach napisz app.
+App tworzy nowy plik o nazwie temp.tmp.
+App zapisuje do tego pliku temp .tmp 10 imion.
+App pobiera z pliku temp temp.tmp imiona i zapisuje je do pliku
+o nazwie imiona.txt i app usuwa po wykonanej operacji plik temp.tmp.
+App wyświetla dane w app z pliku imiona.txt (oraz pobiera doługość imiona)
+App wykonuje to w jednym cpp.
